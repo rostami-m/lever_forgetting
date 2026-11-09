@@ -1,0 +1,7 @@
+# Aliases understood by --model (see ffcl/config.py MODELS). Raw HF ids also work.
+# llama3.1-8b   NousResearch/Meta-Llama-3.1-8B-Instruct   paper's primary model
+# llama3.2-3b   unsloth/Llama-3.2-3B-Instruct             also used for full fine-tuning
+# qwen2.5-7b    Qwen/Qwen2.5-7B-Instruct
+# qwen2.5-14b   Qwen/Qwen2.5-14B-Instruct                 bf16 needs ~48GB; else four_bit: true
+# mistral-7b    mistralai/Mistral-7B-Instruct-v0.3        needs sentencepiece + Hub licence
+# smoke         HuggingFaceTB/SmolLM2-135M-Instruct       smoke test, no GPU needed

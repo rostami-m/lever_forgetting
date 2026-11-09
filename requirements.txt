@@ -1,0 +1,17 @@
+# Pinned to the versions the paper's runs used. Newer minors generally work: the package is tested
+# against transformers 4.55/5.9 and peft 0.17/0.19.
+torch>=2.1
+transformers>=4.44,<6
+peft>=0.11
+datasets>=2.20
+accelerate>=0.30
+scikit-learn>=1.3
+scipy>=1.10
+numpy>=1.24
+matplotlib>=3.7
+PyYAML>=6.0
+# Mistral's tokenizer is sentencepiece-based and fails to load without these.
+sentencepiece>=0.1.99
+protobuf>=4.0
+# Optional: 4-bit base weights for large models on small GPUs (CUDA only).
+# bitsandbytes>=0.43

@@ -1,0 +1,27 @@
+# The paper's main configuration. Override any key on the command line.
+model: llama3.1-8b
+device: auto
+corpus_family: real
+corpora: [alpaca, dolly, mbpp, gsm8k_train, pubmedqa]
+capabilities:
+  - mmlu_high_school_mathematics
+  - mmlu_world_religions
+  - mmlu_college_computer_science
+  - mmlu_anatomy
+  - mmlu_international_law
+  - mmlu_moral_scenarios
+  - arc_challenge
+  - gsm8k
+eval_items: 60
+corpus_train: 400
+corpus_test: 100
+rehearsal_held: 8        # reserved for protection methods; excluded from eval in EVERY condition
+seeds: [0, 1]
+levels: [L1, L2, L3, L4]
+batch_size: 4
+max_len: 128
+probe_layers: [4, 8, 16, 24, 32]
+bootstrap_n: 2000
+permutation_n: 2000
+gate_rho: 0.5
+out_dir: results

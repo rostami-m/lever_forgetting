@@ -1,0 +1,3 @@
+# Toy end-to-end test. Equivalent to `python -m ffcl smoke`.
+# Validates the pipeline, NOT the paper's numbers.
+preset: smoke
